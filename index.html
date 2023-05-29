@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ETCH-IDE</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./etchasketch.js"></script>
+    </head>
+        <div class="topnav">
+            <a href="javascript:exp();">Export</a>
+            <a href="javascript:clear();">Clear</a>
+        </div>
+        <div id="contain">
+            <div id="bg">
+                <table id="text">
+                    <tbody id="tarea">
+                    </tbody>
+                </table>
+                <button onclick="tab();" id="tab">Tab</button>
+                <button onclick="newline();" id="enter">Enter</button>
+            </div>
+        </div>
+        <script>populate();</script>
+    </body>
+</html>

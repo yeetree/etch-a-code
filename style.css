@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+#contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+
+#bg {
+    background: url("./img/red.png");
+    width: 70vw;
+    height: 58.1vw;
+    background-size: contain;
+}
+
+#text {
+    overflow: hidden;
+    margin: 18.8% 18% 19% 19%;
+    width: 62%;
+    height: 51.6%;
+    resize: none;
+    background: transparent;
+    border-radius: 5%;
+    border: 0px;
+    table-layout: fixed;
+    white-space: pre;
+}
+
+#tarea tr {
+    height: 3vw;
+    min-height: 3vw;
+    max-height: 3vw;
+    font-size: 2.5vw;
+    font-family: monospace, monospace;
+}
+
+#tarea {
+    display: flex;
+    flex-direction: column
+}
+
+#tab {
+    position: absolute;
+    margin: -11.5% 10% 10% 5%;
+    width: 7.8vw;
+    height: 7.8vw;
+    background: transparent;
+    border: 0px;
+    font-size: 2vw;
+}
+
+#enter {
+    position: absolute;
+    margin: -11.5% 10% 10% 57%;
+    width: 7.8vw;
+    height: 7.8vw;
+    background: transparent;
+    border: 0px;
+    font-size: 2vw;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+input:focus, textarea {
+    outline: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
