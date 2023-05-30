@@ -2,11 +2,15 @@ body {
     margin: 0;
 }
 
-#contain {
+.contain {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 92vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
 }
 
 #bg {
@@ -14,6 +18,7 @@ body {
     width: 70vw;
     height: 58.1vw;
     background-size: contain;
+    position: absolute;
 }
 
 #text {
@@ -43,23 +48,59 @@ body {
 }
 
 #tab {
-    position: absolute;
-    margin: -11.5% 10% 10% 5%;
+    position: relative;
+    margin: -16.5% 8% 10% 7%;
     width: 7.8vw;
     height: 7.8vw;
     background: transparent;
     border: 0px;
     font-size: 2vw;
+    float: left;
 }
 
 #enter {
-    position: absolute;
-    margin: -11.5% 10% 10% 57%;
+    position: relative;
+    margin: -16.5% 8% 10% 5%;
     width: 7.8vw;
     height: 7.8vw;
     background: transparent;
     border: 0px;
     font-size: 2vw;
+    float: right;
+}
+
+#term {
+    position: absolute;
+    zoom: 70%;
+}
+
+#prg {
+    width: 14%;
+    height: 4vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#termtxt {
+    width: 80vw;
+    height: 60vw;
+    font-size: 2vw;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: hidden;
+}
+
+#term button {
+    width: 14%;
+    height: 4vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#term {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Add a black background color to the top navigation */
@@ -91,7 +132,7 @@ body {
     color: white;
 }
 
-input:focus, textarea {
+#bg:focus {
     outline: none !important;
 }
 

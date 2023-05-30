@@ -5,19 +5,31 @@
         <title>ETCH-IDE</title>
         <link rel="stylesheet" href="./style.css">
         <script src="./etchasketch.js"></script>
+        <script src="./terminal.js"></script>
     </head>
         <div class="topnav">
             <a href="javascript:exp();">Export</a>
             <a href="javascript:clear();">Clear</a>
+            <a id="tog" href="javascript:togmode();">Run</a>
         </div>
-        <div id="contain">
-            <div id="bg">
+        <div class="contain">
+            <div style="z-index: 1;" tabindex="-1" id="bg">
                 <table id="text">
                     <tbody id="tarea">
                     </tbody>
                 </table>
                 <button onclick="tab();" id="tab">Tab</button>
                 <button onclick="newline();" id="enter">Enter</button>
+            </div>
+        </div>
+        <div class="contain">
+            <div tabindex="-1" style="display:none; z-index: 0;" id="term">
+                <select name="prg" id="prg">
+                    <option value="js">javascript</option>
+                    <option value="bf">brainf**k</option>
+                </select>
+                <button onclick="run();">Run</button>
+                <textarea readonly id="termtxt"></textarea>
             </div>
         </div>
         <script>populate();</script>
