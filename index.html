@@ -25,11 +25,19 @@
         <div class="contain">
             <div tabindex="-1" style="display:none; z-index: 0;" id="term">
                 <select name="prg" id="prg">
-                    <option value="js">javascript</option>
+                    <!--<option value="js">javascript</option>!-->
                     <option value="bf">brainf**k</option>
+                    <option value="thue">thue</option>
                 </select>
-                <button onclick="run();">Run</button>
+                <div id="buttons">
+                    <button onclick="run();">Run</button>
+                    <button onclick="cancel = true;">Stop</button>
+                    <button onclick="document.getElementById('termtxt').innerHTML = '';">Clear</button>
+                </div>
                 <textarea readonly id="termtxt"></textarea>
+
+                <h2>LICENSES</h2>
+                <h2>Thue Interpreter HEAVILY based off of: <a>https://github.com/angrykoala/thue-js/blob/master/LICENSE</a></p>
             </div>
         </div>
         <script>populate();</script>

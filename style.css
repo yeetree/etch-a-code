@@ -71,6 +71,7 @@ body {
 
 #term {
     position: absolute;
+    top: 10%;
     zoom: 70%;
 }
 
@@ -86,21 +87,33 @@ body {
     height: 60vw;
     font-size: 2vw;
     white-space: pre;
-    overflow-wrap: normal;
-    overflow-x: hidden;
+    /*overflow-wrap: normal;
+    overflow-x: hidden;*/
 }
 
 #term button {
     width: 14%;
     height: 4vw;
-    text-align: center;
     font-size: 2vw;
+    text-align: center;
+}
+
+#buttons {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #term {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#term p, h1, h2 {
+    font-size: 2vw;
+    font-family: monospace, monospace;
+    text-align: center;
 }
 
 /* Add a black background color to the top navigation */
